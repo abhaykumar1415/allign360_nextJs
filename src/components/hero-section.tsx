@@ -208,7 +208,7 @@ export function HeroSection() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{
                         duration: 0.24,
-                        ease: [0.22, 1, 0.36, 1],
+                        ease: [0.22, 1, 0.36, 1] as const,
                       }}
                     >
                       {word}
@@ -239,7 +239,7 @@ export function HeroSection() {
                 ? { opacity: 1, y: 0 }
                 : { opacity: 0, y: 20 }
             }
-            transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] as const }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <Button

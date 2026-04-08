@@ -8,7 +8,7 @@ const containerVariants = {
 };
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const } },
 };
 const listVariants = {
   hidden: {},
@@ -16,7 +16,7 @@ const listVariants = {
 };
 const listItemVariants = {
   hidden: { opacity: 0, x: -18 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] } },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] as const } },
 };
 
 export function MembershipPlans() {
